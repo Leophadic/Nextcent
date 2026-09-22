@@ -1,0 +1,171 @@
+.footer {
+  background-color: #263238; /* Figma Dark Slate background token */
+  padding: 4rem 1.5rem;
+  color: #F5F7FA;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+/* Brand info segment styles */
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.logoText {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.copyrightGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #F5F7FA;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.socialIcon {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.socialIcon:hover {
+  background-color: #4CAF4F; /* Primary highlight green on hover */
+}
+
+.socialIcon img {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Structural navigation list columns */
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.columnHeading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.link {
+  font-size: 0.875rem;
+  color: #F5F7FA;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.link:hover {
+  opacity: 1;
+  color: #4CAF4F;
+}
+
+/* Newsletter Input and custom overlay setup */
+.newsletterColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 16rem;
+}
+
+.inputField {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem 2.5rem 0.625rem 0.75rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputField::placeholder {
+  color: #D9DBE1;
+  opacity: 0.6;
+}
+
+.submitBtn {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  width:2rem;
+}
+
+/* Responsive Rules matching desktop wide standard */
+@media (min-width: 768px) {
+  .footer {
+    padding: 4rem 6rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}

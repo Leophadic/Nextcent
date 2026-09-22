@@ -1,0 +1,129 @@
+.section {
+  background-color: #F5F7FA; /* Neutral Silver background strip */
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.imageColumn {
+  display: flex;
+  justify-content: center;
+}
+
+.logoCard {
+  width: 100%;
+  max-width: 20rem;
+  aspect-ratio: 1;
+  background-color: #040404; /* Matches the dark slate card overlay framing */
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.featuredLogo {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+.contentColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.quoteText {
+  font-size: 0.935rem;
+  font-weight: 500;
+  color: #717171;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.clientName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4D4D4D;
+  margin: 0 0 0.25rem 0;
+}
+
+.clientRole {
+  font-size: 0.875rem;
+  color: #8993A4;
+  margin: 0 0 2rem 0;
+}
+
+/* Bottom elements alignment layout */
+.actionRow {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.logoRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.miniLogo {
+  height: 1.5rem;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.7;
+}
+
+.meetAllLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4CAF4F; /* Nexcent Green theme color */
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.meetAllLink:hover {
+  color: #388E3C;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+}
+
+.meetAllLink:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Desktop Wide Resolution Adapters */
+@media (min-width: 768px) {
+  .section {
+    padding: 2rem 6rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+  }
+
+  .actionRow {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

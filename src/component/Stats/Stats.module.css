@@ -1,0 +1,94 @@
+.statsSection {
+  background-color: #F5F7FA; /* Neutral/Silver color token from Figma */
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridContainer {
+  width: 100%;
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.textSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #4D4D4D;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.highlight {
+  color: #4CAF4F; /* Brand Green */
+}
+
+.subtitle {
+  font-size: 0.935rem;
+  color: #18191F;
+  margin-top: 0.5rem;
+}
+
+.metricsSide {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.metricCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iconWrapper {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metricIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.countNumber {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #4D4D4D;
+  line-height: 1.2;
+}
+
+.labelName {
+  font-size: 0.875rem;
+  color: #717171;
+}
+
+/* Responsive Desktop Rules */
+@media (min-width: 768px) {
+  .statsSection {
+    padding: 4rem 6rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}

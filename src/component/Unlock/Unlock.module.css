@@ -1,0 +1,85 @@
+.unlockSection {
+  background-color: #ffffff;
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.imageSide {
+  display: flex;
+  justify-content: center;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.textSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #4D4D4D; /* Secondary neutral text from design guidelines */
+  line-height: 1.25;
+  margin: 0;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: #717171; /* Description body text tint */
+  line-height: 1.6;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.btnLearnMore {
+  margin-top: 2rem;
+  align-self: flex-start;
+  background-color: #4CAF4F; /* Nexcent Accent Green */
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+ width:31%;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btnLearnMore:hover {
+  background-color: #388E3C;
+}
+
+.btnLearnMore:active {
+  transform: scale(0.98);
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 768px) {
+  .unlockSection {
+    padding: 4rem 6rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}

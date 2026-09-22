@@ -1,0 +1,85 @@
+.unlockWrapper {
+  background-color: #ffffff;
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.graphicSide {
+  display: flex;
+  justify-content: center;
+}
+
+.illustrationImage {
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.contentSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headingTitle {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #4D4D4D; /* Secondary Neutral Text token */
+  line-height: 1.25;
+  margin: 0;
+}
+
+.bodyParagraph {
+  font-size: 0.875rem;
+  color: #717171; /* Description body text tint */
+  line-height: 1.6;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.actionBtn {
+  margin-top: 2rem;
+  align-self: flex-start;
+  background-color: #4CAF4F; /* Brand Primary Accent Green */
+  color: #ffffff;
+  width:30%;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.actionBtn:hover {
+  background-color: #388E3C;
+}
+
+.actionBtn:active {
+  transform: scale(0.98);
+}
+
+/* Wide Viewport Grid Layout Override */
+@media (min-width: 768px) {
+  .unlockWrapper {
+    padding: 4rem 6rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}

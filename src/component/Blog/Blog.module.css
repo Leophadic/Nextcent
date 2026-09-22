@@ -1,0 +1,118 @@
+.blogSection {
+  background-color: #ffffff;
+  padding: 4rem 1.5rem 8rem 1.5rem; /* Large bottom padding for overlapping cards */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 72rem;
+}
+
+.header {
+  text-align: center;
+  max-width: 38rem;
+  margin: 0 auto 3rem auto;
+}
+
+.mainTitle {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #4D4D4D;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #717171;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7rem; /* Increased vertical space to give room to the overlapping content boxes */
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 16rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Floating overlay layout box from Figma rules */
+.contentBox {
+  position: absolute;
+  bottom: -4rem;
+  width: 86%;
+  background-color: #F5F7FA; /* Neutral Silver tint */
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 16px rgba(171, 190, 209, 0.3);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #717171;
+  line-height: 1.4;
+  margin: 0 0 1rem 0;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4CAF4F; /* Nexcent Accent Green */
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #388E3C;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+}
+
+.link:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive Grid Configuration */
+@media (min-width: 768px) {
+  .blogSection {
+    padding: 4rem 6rem 8rem 6rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .contentBox {
+    padding: 1.5rem;
+  }
+}
