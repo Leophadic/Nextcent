@@ -5,7 +5,7 @@
  import Home from './Pages/Home/Home.jsx'; 
  import {Routes, Route} from "react-router";
 // import Navbar from './component/Navbar/Navbar.jsx';
- import Features from './pages/Features/Features.jsx';
+ import Features from './Pages/Features/Features.jsx';
  import Product from './Pages/Product/Product.jsx';
 import LoginPage from './Pages/LoginPage/LoginPage.jsx';
 import Dashboard from './Pages/Dashboard/Dashboard.jsx';
